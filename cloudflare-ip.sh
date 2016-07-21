@@ -166,7 +166,7 @@ Please Open out.txt file for possible I.P. $COL_RESET"
 fi
 
 if [ "$m1" = "2" ];then
-nmap --script dns-brute -sn $var1
+proxychains nmap --script dns-brute -sn $var1
 fi
 
 if [ "$m1" = "3" ];then
